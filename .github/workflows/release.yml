@@ -1,0 +1,47 @@
+name: Release DMG
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dmg:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install FFmpeg
+        run: brew install ffmpeg
+
+      - name: Rust toolchain
+        run: rustup toolchain install stable --profile minimal && rustup default stable
+
+      - name: Build KILN.app and disk image
+        run: bash package/make_app.sh
+
+      - name: FFmpeg source (GPL corresponding source for the bundled build)
+        run: |
+          URL=$(brew info --json=v2 ffmpeg | python3 -c 'import json,sys; print(json.load(sys.stdin)["formulae"][0]["urls"]["stable"]["url"])')
+          curl -fsSL "$URL" -o "dist/$(basename "$URL")"
+          ls -lh dist
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          TAG=${GITHUB_REF_NAME}
+          [[ "$TAG" == v* ]] || TAG="v$VERSION"
+          cd dist
+          shasum -a 256 KILN-*.dmg ffmpeg-*.tar.* > SHA256SUMS.txt
+          NOTES="KILN $VERSION for macOS (Apple Silicon).
+
+          Open the disk image and drag KILN into Applications. The app is not notarized: the first time, open it, then go to System Settings > Privacy & Security and choose Open Anyway.
+
+          KILN bundles FFmpeg, built by Homebrew with GPL components. Its source code is attached to this release as ffmpeg-*.tar.*."
+          gh release create "$TAG" KILN-*.dmg ffmpeg-*.tar.* SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --title "KILN $VERSION" --notes "$NOTES" --target "$GITHUB_SHA"
