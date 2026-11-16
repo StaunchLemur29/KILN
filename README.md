@@ -101,7 +101,7 @@ The twelve factory presets, all rendered from the same picture.
 ## Download
 
 Get the disk image from [Releases](https://github.com/StaunchLemur29/KILN/releases). KILN runs on
-**Apple Silicon Macs only** (M1 or later) with macOS 14 or newer; Intel Macs are not supported.
+**Apple Silicon Macs only** (M1 or later) with macOS 15 or newer; Intel Macs are not supported.
 The app isn't notarized: the first time you open it, go to System Settings → Privacy & Security
 and choose **Open Anyway**.
 

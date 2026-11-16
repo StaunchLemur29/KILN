@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   dmg:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
 
@@ -38,7 +38,7 @@ jobs:
           [[ "$TAG" == v* ]] || TAG="v$VERSION"
           cd dist
           shasum -a 256 KILN-*.dmg ffmpeg-*.tar.* > SHA256SUMS.txt
-          NOTES="KILN $VERSION for macOS. Apple Silicon Macs only (M1 or later), macOS 14 or newer; it does not run on Intel Macs.
+          NOTES="KILN $VERSION for macOS. Apple Silicon Macs only (M1 or later), macOS 15 or newer; it does not run on Intel Macs.
 
           Open the disk image and drag KILN into Applications. The app is not notarized: the first time, open it, then go to System Settings > Privacy & Security and choose Open Anyway.
 
