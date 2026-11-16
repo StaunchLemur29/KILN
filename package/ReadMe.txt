@@ -1,8 +1,10 @@
 KILN — analog video emulator
 
 INSTALL
+KILN runs on Apple Silicon Macs only (M1 or later), macOS 14 or newer. It does not run on Intel Macs.
 Drag KILN into the Applications folder, then open it from there.
-If macOS says it can't check the app, right-click KILN, choose Open, then Open again (only the first time).
+The first time, macOS says it can't check the app: click Done, open System Settings > Privacy & Security,
+scroll down and choose Open Anyway next to KILN.
 
 USE
 - Drop a video or picture on the window, or press BROWSE.

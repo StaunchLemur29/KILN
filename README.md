@@ -4,12 +4,12 @@
 
 # KILN
 
-**An analog video emulator for macOS.**
+**An analog video emulator for macOS on Apple Silicon.**
 
 Run a video, a still picture, a camera or a stream through a simulated composite signal,<br>
 tape transport and CRT screen, then export it to H.264, HEVC, ProRes 422 or ProRes 4444.
 
-![Platform: macOS](https://img.shields.io/badge/platform-macOS-1f2328)
+![Platform: macOS on Apple Silicon](https://img.shields.io/badge/platform-macOS%20(Apple%20Silicon)-1f2328)
 ![Built with Rust](https://img.shields.io/badge/built%20with-Rust-b7410e)
 ![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-2f81f7)
 
@@ -22,6 +22,7 @@ tape transport and CRT screen, then export it to H.264, HEVC, ProRes 422 or ProR
 - [What it does](#what-it-does)
 - [Looks](#looks)
 - [The rack](#the-rack)
+- [Download](#download)
 - [Build](#build)
 - [Using KILN](#using-kiln)
 - [Render from the command line](#render-from-the-command-line)
@@ -96,6 +97,13 @@ The twelve factory presets, all rendered from the same picture.
 | **CAPTURE** | What a camera sees pointed at the tube: shutter pulse, moiré, rainbow interference |
 | **CONVERGENCE** | Colour fringing and phosphor misconvergence |
 | **GLASS & OPTICS** | Glow, curvature, stretch, fisheye |
+
+## Download
+
+Get the disk image from [Releases](https://github.com/StaunchLemur29/KILN/releases). KILN runs on
+**Apple Silicon Macs only** (M1 or later) with macOS 14 or newer; Intel Macs are not supported.
+The app isn't notarized: the first time you open it, go to System Settings → Privacy & Security
+and choose **Open Anyway**.
 
 ## Build
 
