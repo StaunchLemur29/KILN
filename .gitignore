@@ -1,0 +1,16 @@
+# build output and finished app (the app bundles FFmpeg libraries under the GPL;
+# publish builds only with that licence's source offer)
+/target/
+/dist/
+*.dmg
+
+# local screenshots
+/shots/
+
+# private: notes and data taken from studying another program; keep these off public hosting
+/MECHANICS.md
+/mechanics.json
+/presets.json
+
+# macOS
+.DS_Store

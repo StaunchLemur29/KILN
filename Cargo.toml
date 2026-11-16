@@ -1,0 +1,32 @@
+[package]
+name = "kiln"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.37.0"
+egui = "0.37.0"
+image = "0.25.10"
+libc = "0.2.191"
+rayon = "1.12.0"
+rfd = "0.18.0"
+serde_json = "1.0.154"
+
+[dev-dependencies]
+ab_glyph = "0.2.32"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+winit = "0.30.13"
+
+[profile.dev]
+opt-level = 2
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = true
+panic = "abort"

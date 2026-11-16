@@ -1,0 +1,29 @@
+{
+ "source": "KILN's own factory looks (used when no private presets.json is present)",
+ "presets": [
+  { "name": "CAMCORDER 89", "category": "camera", "description": "Worn camcorder tape",
+    "values": { "bleed": 1.4, "burn": 1.1, "chromaBleed": 0.35, "soften": 0.3, "grit": 0.15, "headSwitch": 0.35, "tear": 0.08, "dropouts": 0.03, "sparkle": 0.05, "glow": 0.15, "tube": 0.25 } },
+  { "name": "SUNDAY TAPE", "category": "camera", "description": "Faded off-air recording",
+    "values": { "bleed": 0.8, "burn": 0.9, "drift": 0.15, "ghosting": 0.25, "grit": 0.25, "humBar": 0.15, "soften": 0.35, "chromaBleed": 0.5, "outputContrast": 0.9 } },
+  { "name": "ROLLING SHUTTER", "category": "camera", "description": "Phone filming a TV",
+    "values": { "screenPulse": 0.7, "screenPulseShutter": 60, "screenPulseReadout": 0.8, "moire": 0.35, "tube": 0.6, "phosphor": 0.5, "geoCurve": 0.3, "glow": 0.2 } },
+  { "name": "SECURITY CAM", "category": "camera", "description": "Grey night monitor",
+    "values": { "bleed": 0.1, "burn": 1.3, "grit": 0.35, "sparkle": 0.1, "soften": 0.25, "tube": 0.5, "phosphor": 0.3, "flicker": 0.15, "outputContrast": 1.3 } },
+  { "name": "LIVING ROOM", "category": "tv", "description": "Warm family tube",
+    "values": { "tube": 0.6, "phosphor": 0.55, "geoCurve": 0.45, "glow": 0.3, "halation": 0.25, "phosphorBloom": 0.25, "bleed": 1.25, "chromaBleed": 0.25, "fringe": 0.2 } },
+  { "name": "ARCADE CABINET", "category": "tv", "description": "Sharp mask with glow",
+    "values": { "tube": 0.8, "phosphor": 0.8, "maskScale": 0.35, "glow": 0.4, "phosphorBloom": 0.35, "postSharpen": 0.4, "geoCurve": 0.25, "bleed": 1.4 } },
+  { "name": "LOST SIGNAL", "category": "tv", "description": "Weak aerial reception",
+    "values": { "sparkle": 0.5, "grit": 0.3, "ghosting": 0.4, "humBar": 0.3, "vroll": 0.15, "jitter": 0.2, "drift": 0.4, "bleed": 0.6, "tube": 0.3 } },
+  { "name": "STUDIO MONITOR", "category": "tv", "description": "Clean broadcast reference",
+    "values": { "tube": 0.35, "phosphor": 0.35, "geoCurve": 0.1, "glow": 0.1, "postSharpen": 0.2 } },
+  { "name": "MELTDOWN", "category": "fx", "description": "Bent and overdriven",
+    "values": { "circuitBend": 0.6, "bendFrequencyMHz": 2.2, "bendQ": 9, "bendBoostDB": 30, "bendMotion": 0.3, "bendFeedback": 0.05, "bleed": 2.2, "burn": 1.5, "rgbShift": 0.3 } },
+  { "name": "TIDE POOL", "category": "fx", "description": "Slow liquid waves",
+    "values": { "modMix": 0.45, "modWaves": 35, "modReact": 0.15, "modLowpass": 4, "glow": 0.25, "spectral": 0.3, "chromaBleed": 0.3 } },
+  { "name": "ECHO CHAMBER", "category": "fx", "description": "Spiralling video feedback",
+    "values": { "feedbackMix": 0.55, "fbZoom": 1.03, "fbRotate": 0.04, "fbHue": 0.12, "fbTrails": 0.9, "glow": 0.3 } },
+  { "name": "STATIC STORM", "category": "fx", "description": "Everything falling apart",
+    "values": { "tear": 0.5, "dropouts": 0.3, "dropoutStyle": 4, "jitter": 0.4, "vroll": 0.3, "sparkle": 0.6, "headSwitch": 0.6, "exposureFlash": 0.3, "topSpectral": 0.4 } }
+ ]
+}

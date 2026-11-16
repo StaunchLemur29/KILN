@@ -1,0 +1,25 @@
+KILN — analog video emulator
+
+INSTALL
+Drag KILN into the Applications folder, then open it from there.
+If macOS says it can't check the app, right-click KILN, choose Open, then Open again (only the first time).
+
+USE
+- Drop a video or picture on the window, or press BROWSE.
+- Pick a look from PRESETS, then fine-tune it with QUICK SHAPE or the detail controls.
+- ADVANCED shows every module and knob; DRY / WET blends the effect with the clean picture.
+- LIVE uses a camera, capture device, the screen, or a stream address as the source.
+  The first time, macOS asks whether KILN may use the camera: choose Allow.
+- RECORD records your knob moves while the video plays; EXPORT renders them into the file.
+- EXPORT saves H.264, HEVC, ProRes 422 or ProRes 4444.
+- Space plays and pauses. Click the round K badge for About.
+
+RENDER WITHOUT OPENING THE WINDOW
+  /Applications/KILN.app/Contents/MacOS/KILN --headless-export in.mp4 out.mov "PRESET=My Look" HI prores422
+  After the two files: a preset name, SD / HI / SOURCE, DISPLAY=0-4, and h264 / hevc / prores422 / prores4444.
+
+Your own presets and the last session are kept in
+~/Library/Application Support/KILN
+
+KILN includes FFmpeg (ffmpeg.org) for reading and writing video; its licence is inside the app
+under Contents/Resources/Licenses.
