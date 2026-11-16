@@ -31,6 +31,7 @@ cp Info.plist "$APP/Contents/Info.plist"
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 iconutil -c icns "$ICONSET" -o "$APP/Contents/Resources/KILN.icns"
 cp assets/fonts/OFL-*.txt "$APP/Contents/Resources/Licenses/"
+cp LICENSE "$APP/Contents/Resources/Licenses/KILN-LICENSE.txt"
 FFROOT=$(cd "$(dirname "$(realpath "$FFMPEG")")/.." && pwd)
 for f in LICENSE.md COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3; do
   [ -f "$FFROOT/$f" ] && cp "$FFROOT/$f" "$APP/Contents/Resources/Licenses/FFmpeg-$f"

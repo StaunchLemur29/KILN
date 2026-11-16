@@ -163,7 +163,7 @@ kiln --screenshot shots/window.png --advanced input.png   # advanced mode
 
 ## Licences
 
-- KILN's own code: choose a licence before publishing (none is granted yet).
+- KILN's own code: MIT (see [LICENSE](LICENSE)).
 - Fonts in `assets/fonts`: SIL Open Font License (licence files beside them).
 - FFmpeg (bundled in built apps only): LGPL/GPL, depending on how it was built. A Homebrew
   build includes GPL parts (x264, x265), so anyone you give a built app to must also be able to
