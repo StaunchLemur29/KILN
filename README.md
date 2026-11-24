@@ -4,10 +4,10 @@
 
 # KILN
 
-**An analog video emulator for macOS on Apple Silicon.**
+**Analogue video emulator for macOS on Apple Silicon.**
 
-Run a video, a still picture, a camera or a stream through a simulated composite signal,<br>
-tape transport and CRT screen, then export it to H.264, HEVC, ProRes 422 or ProRes 4444.
+Run a video, still picture, camera, or stream through a simulated analogue signal,<br>
+tape transport and CRT screen, then export to H.264, HEVC, ProRes 422, or ProRes 4444
 
 ![Platform: macOS on Apple Silicon](https://img.shields.io/badge/platform-macOS%20(Apple%20Silicon)-1f2328)
 ![Built with Rust](https://img.shields.io/badge/built%20with-Rust-b7410e)
@@ -32,17 +32,17 @@ tape transport and CRT screen, then export it to H.264, HEVC, ProRes 422 or ProR
 
 <img src="docs/images/demo.gif" align="right" width="46%" alt="Four KILN looks in motion: Camcorder 89, Lost Signal, Echo Chamber and Static Storm">
 
-- **A whole signal path.** Colour bleed, chroma drift, head-switch bands, dropouts, tearing,
+- **Simulated signal path** Colour bleed, chroma drift, head-switch bands, dropouts, tearing,
   vertical roll, ghosting, hum bars, snow and grit, then a picture tube with a phosphor mask,
-  curvature, glow and halation on top.
-- **Any source.** Drop in a video or a picture, or press **LIVE** for a camera, a capture
-  device, the screen or a stream address.
-- **Presets and knobs.** Twelve factory looks, your own saved beside them. **EASY** gives
-  four big knobs, **ADVANCED** opens every module.
-- **Performable.** **RECORD** captures your knob moves while the video plays, and the export
-  renders them into the file.
-- **Clean exports.** H.264, HEVC, ProRes 422 or ProRes 4444 at SD, HI or source quality, from
-  the window or from the command line.
+  curvature, glow and halation on top
+- **Different sources** Drop in a video or a picture, or press **LIVE** for a camera, a capture
+  device, the screen or a stream address
+- **Presets and knobs** Twelve factory looks, your own saved beside them. **EASY** has
+  four main knobs, **ADVANCED** opens every module
+- **Recreatahble** **RECORD** captures your knob moves while the video plays, and the export
+  renders them into the file
+- **Clean exports** H.264, HEVC, ProRes 422 or ProRes 4444 at SD, HI or source quality, from
+  the window or from the command line
 
 <br clear="right">
 
@@ -103,7 +103,7 @@ The twelve factory presets, all rendered from the same picture.
 Get the disk image from [Releases](https://github.com/StaunchLemur29/KILN/releases). KILN runs on
 **Apple Silicon Macs only** (M1 or later) with macOS 15 or newer; Intel Macs are not supported.
 The app isn't notarized: the first time you open it, go to System Settings → Privacy & Security
-and choose **Open Anyway**.
+and choose **Open Anyway**
 
 ## Build
 
@@ -115,7 +115,7 @@ bash package/make_app.sh       # KILN.app and an installer disk image in dist/
 ```
 
 `make_app.sh` copies FFmpeg and the libraries it uses into the app, so the finished app runs
-on Macs without Homebrew.
+on Macs without Homebrew
 
 ## Using KILN
 
