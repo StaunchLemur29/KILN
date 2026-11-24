@@ -32,16 +32,16 @@ tape transport and CRT screen, then export to H.264, HEVC, ProRes 422, or ProRes
 
 <img src="docs/images/demo.gif" align="right" width="46%" alt="Four KILN looks in motion: Camcorder 89, Lost Signal, Echo Chamber and Static Storm">
 
-- **Simulated signal path** Colour bleed, chroma drift, head-switch bands, dropouts, tearing,
+- **Simulated signal path:** Colour bleed, chroma drift, head-switch bands, dropouts, tearing,
   vertical roll, ghosting, hum bars, snow and grit, then a picture tube with a phosphor mask,
   curvature, glow and halation on top
-- **Different sources** Drop in a video or a picture, or press **LIVE** for a camera, a capture
+- **Different sources:** Drop in a video or a picture, or press **LIVE** for a camera, a capture
   device, the screen or a stream address
-- **Presets and knobs** Twelve factory looks, your own saved beside them. **EASY** has
+- **Presets and knobs:** Twelve factory looks, your own saved beside them. **EASY** has
   four main knobs, **ADVANCED** opens every module
-- **Recreatahble** **RECORD** captures your knob moves while the video plays, and the export
+- **Recreatable:** **RECORD** captures your knob moves while the video plays, and the export
   renders them into the file
-- **Clean exports** H.264, HEVC, ProRes 422 or ProRes 4444 at SD, HI or source quality, from
+- **Clean exports:** H.264, HEVC, ProRes 422 or ProRes 4444 at SD, HI or source quality, from
   the window or from the command line
 
 <br clear="right">
