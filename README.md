@@ -4,7 +4,7 @@
 
 # KILN
 
-**Analogue video emulator for macOS on Apple Silicon.**
+**Analogue video emulator for macOS**
 
 Run a video, still picture, camera, or stream through a simulated analogue signal,<br>
 tape transport and CRT screen, then export to H.264, HEVC, ProRes 422, or ProRes 4444
